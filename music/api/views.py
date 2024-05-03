@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Album,Song 
+from .models import Album,Song,Review
 from rest_framework import viewsets 
-from .serializers import AlbumSerializer, SongSerializer
+from .serializers import AlbumSerializer, SongSerializer, ReviewSerializer
 # Create your views here.
 class AlbumViewSet(viewsets.ModelViewSet):
 	queryset =  Album.objects.all()
@@ -10,3 +10,7 @@ class AlbumViewSet(viewsets.ModelViewSet):
 class SongViewSet(viewsets.ModelViewSet):
 	queryset = Song.objects.all()
 	serializer_class = SongSerializer
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializer

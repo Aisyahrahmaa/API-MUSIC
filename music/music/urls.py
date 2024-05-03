@@ -22,6 +22,8 @@ from api import views
 router = routers.DefaultRouter()
 router.register(r'album', views.AlbumViewSet)
 router.register(r'song', views.SongViewSet)
+router.register(r'review',views.ReviewViewSet)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),

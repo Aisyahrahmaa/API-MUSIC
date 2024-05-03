@@ -1,4 +1,4 @@
-from .models import Album,Song
+from .models import Album,Song, Review
 from rest_framework import serializers
 
 class AlbumSerializer(serializers.ModelSerializer):
@@ -10,3 +10,8 @@ class SongSerializer(serializers.ModelSerializer):
 		class Meta:
 			model = Song
 			fields = ('album', 'song_title')
+
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = '__all__'
