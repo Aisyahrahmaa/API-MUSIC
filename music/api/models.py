@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+
 
 
 class Album(models.Model):
@@ -21,9 +21,9 @@ def __str__(self):
 
 class Review(models.Model):
     song = models.ForeignKey(Song, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.CharField(max_length=50)
     rating = models.IntegerField()
     comment = models.TextField()
 
     def __str__(self):
-        return f"{self.user.username} - {self.song.song_title} -{self.rating}"
+        return f"{self.user} - {self.song.song_title} -{self.rating}"
