@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+
+.kotak {
+    display: flex;
+    align-items: center;
+   
+    border: #FC4100 solid;
+    margin-bottom: 5px;
+    height: 30px;
+    position: relative;
+}
+.kotak_2 {
+    border: #FFC55A solid;
+    margin-bottom: 5px;
+}
+.kotak_3 {
+    border: #00215E solid;
+    margin-bottom: 5px;
+}
+.kotak_4 {
+    border: #2C4E80 solid;
+    margin-bottom: 5px;
+}
+.kotak_5 {
+    border: #D20062 solid;
+    margin-bottom: 5px;
+}
+.kotak_6 {
+    border: #D6589F solid;
+    margin-bottom: 5px;
+}
+span {
+    margin-top: 0; 
+    margin-left: 4px;
+    margin-right: 4px;
+
+    transform: translateY(-50%);
+    position: relative;
+}
+button {
+
+    color: white;
+    font-weight: 400;
+
+    border: none;
+    border-radius: 6px;
+    background-color: #D6589F;
+   
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+    
+}
+.endpoint {
+    font-weight: bold;
+}
+.method {
+    color: #666;
+   
+}
